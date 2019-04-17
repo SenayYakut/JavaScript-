@@ -42,3 +42,44 @@ if (amount > bank_balance) {
     );
 }
 // You can't afford this purchase. :(
+
+/*The specific list of "falsy" values in JavaScript is as follows:
+
+""(empty string)
+0,-0,NaN(invalid number)
+null, undefined
+false
+*/
+
+/*Any value that's not on this "falsy" list is "truthy." Here are some examples of those:
+
+"hello"
+42
+true
+[],[1,"2",3](arrays)
+{},{a:42}(objects)
+function foo(){...}(functions)
+*/
+
+//nested scopes
+function foo() {
+    var a = 1;
+
+    function bar() {
+        var b = 2;
+
+        function baz() {
+            var c = 3;
+
+            console.log(a, b, c);	// 1 2 3
+        }
+
+        baz();
+        console.log(a, b);		// 1 2
+    }
+
+    bar();
+    console.log(a);				// 1
+}
+
+foo();
