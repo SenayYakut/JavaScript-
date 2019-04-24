@@ -28,3 +28,13 @@ var c = foo(newVar);// New Code.
     RHSs being: foo()(1), ..=a(3),a+..(4), ..+b(5).
 
 */
+
+function foo(a){
+    var b = a * 2;
+    function bar(c){
+        console.log(a,b,c);
+    }
+    bar(b * 3);
+}
+
+foo(2);//2 4 12
