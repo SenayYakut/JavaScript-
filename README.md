@@ -23,3 +23,12 @@
  * One of Engine's friends; handles all the dirty work of parsing and code-generation (see previous section).
 3. **Scope:**
  * Another friend of Engine; collects and maintains a look-up list of all the declared identifiers (variables), and enforces a strict set of rules as to how these are accessible to currently executing code.
+ 
+# Lexical Scope
+
+ * There are two predominant models for how scope works. The first of these is by far the most common, used by the vast majority of programming languages. It's called Lexical Scope,
+
+# Dynamic Scope
+
+The other model, which is still used by some languages (such as Bash scripting, some modes in Perl, etc.) is called Dynamic Scope.
+
