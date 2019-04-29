@@ -59,3 +59,54 @@ console.log(o1.a); // 2
 foo(o2);
 console.log(o2.a); // undefined
 console.log(a); // 2 -- Oops, leaked global!
+
+function foo(a){
+    var b = 2;
+
+    function bar(){
+
+    }
+    var c =3;
+}
+bar(); // fails
+
+console.log(a, b, c); // all 3 fail
+
+function doSomething(a) {
+    b = a + doSomethingElse(a * 2);
+
+    console.log(b * 3);
+}
+
+function doSomethingElse(a) {
+    return a - 1;
+}
+
+var b;
+
+doSomething(2); // 15
+
+function doSomething(a) {
+    function doSomethingElse(a) {
+        return a - 1;
+    }
+
+    var b;
+
+    b = a + doSomethingElse(a * 2);
+
+    console.log(b * 3);
+}
+doSomething(2); // 15
+
+//The i = 3 assignment inside of bar(..) overwrites, unexpectedly, the i that was declared in foo(..) at the for-loop. In this case, it will result in an infinite loop, because i is set to a fixed value of 3 and that will forever remain < 10.
+function foo(){
+    function bar(a){
+        i=3;
+        console.log(a+1);
+    }
+    for (var i=0; i<10; i++){
+        bar(i*2);
+    }
+}
+foo();
