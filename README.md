@@ -56,3 +56,4 @@
 
 * This is the most naive garbage collection algorithm. This algorithm reduces the definition of "an object is not needed anymore" to "an object has no other objects referencing it". An object is considered garbage collectible if there are zero references pointing at this object.
 
+## Event delegation
