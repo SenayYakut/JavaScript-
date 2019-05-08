@@ -48,10 +48,12 @@
 * Using values basically means reading and writing in allocated memory. This can be done by reading or writing the value of a variable or an object property or even passing an argument to a function.
 
 ## Release when the memory is not needed anymore
-*Most memory management issues come at this phase. The hardest task here is to find when "the allocated memory is not needed any longer". It often requires the developer to determine where in the program such piece of memory is not needed anymore and free it.
+* Most memory management issues come at this phase. The hardest task here is to find when "the allocated memory is not needed any longer". It often requires the developer to determine where in the program such piece of memory is not needed anymore and free it.
 
-High-level languages embed a piece of software called "garbage collector" whose job is to track memory allocation and use in order to find when a piece of allocated memory is not needed any longer in which case, it will automatically free it. This process is an approximation since the general problem of knowing whether some piece of memory is needed is undecidable (can't be solved by an algorithm).
+* High-level languages embed a piece of software called "garbage collector" whose job is to track memory allocation and use in order to find when a piece of allocated memory is not needed any longer in which case, it will automatically free it. This process is an approximation since the general problem of knowing whether some piece of memory is needed is undecidable (can't be solved by an algorithm).
 
 ## Garbage collection
 
 * This is the most naive garbage collection algorithm. This algorithm reduces the definition of "an object is not needed anymore" to "an object has no other objects referencing it". An object is considered garbage collectible if there are zero references pointing at this object.
+
+## Event delegation
