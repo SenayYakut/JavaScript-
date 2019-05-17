@@ -59,3 +59,4 @@
 ## Event delegation
 ## Explain how `this` work in JavaScript
 ## RESTful APIs |
+## AJAX
