@@ -61,3 +61,4 @@
 ## RESTful APIs |
 ## AJAX
 ## callbacks
+## How prototypal inheritance works
