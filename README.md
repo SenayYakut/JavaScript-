@@ -73,3 +73,6 @@ Nearly all objects in JavaScript are instances of Object which sits on the top o
 ## CI/CD
 ## Bootstrap grid
 ## Responsive web
+##  Gatsby, 
+## Cypress,
+## Styled Components and accessibility best practices,
