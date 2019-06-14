@@ -77,3 +77,4 @@ Nearly all objects in JavaScript are instances of Object which sits on the top o
 ## Cypress,
 ## Styled Components and accessibility best practices,
 ## Build simple, fast websites that are a pleasure to work on and use
+## Implementing monitoring and analytics tools such as Pingdom, Data Dog, Rollbar, Sentry, Google Analytics, and the like
