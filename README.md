@@ -76,3 +76,4 @@ Nearly all objects in JavaScript are instances of Object which sits on the top o
 ##  Gatsby, 
 ## Cypress,
 ## Styled Components and accessibility best practices,
+## Build simple, fast websites that are a pleasure to work on and use
